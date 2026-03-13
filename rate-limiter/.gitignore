@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Compiled output (in root directory - dist/ folder is kept)
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# OS files
+.DS_Store

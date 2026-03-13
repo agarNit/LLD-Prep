@@ -1,0 +1,17 @@
+{
+  "name": "rate-limiter",
+  "version": "1.0.0",
+  "description": "Rate limiter LLD",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/Orchestrator.js",
+    "test": "npm run build && node dist/test.js"
+  },
+  "author": "Nitish Agarwal",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}
