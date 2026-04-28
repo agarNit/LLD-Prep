@@ -5,7 +5,7 @@ public class Inventory {
     private Map<Product, Integer> stock = new HashMap<>();
 
     public void addStock(Product p, int quantity) {
-        stock.put(p, stock.getOrDefault(p, 0)+1);
+        stock.put(p, stock.getOrDefault(p, 0)+quantity);
     }
 
     public void reduceStock(Product p) {

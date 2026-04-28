@@ -26,4 +26,6 @@ public class DispensingState implements State {
     public void refund(VendingMachine machine) {
         System.out.println("Cannot refund while dispensing is in progress.");
     }
+
+    public void onRestock(VendingMachine machine) {}
 }

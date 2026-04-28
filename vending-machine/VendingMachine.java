@@ -3,7 +3,7 @@ public class VendingMachine {
     private Inventory inventory;
     private int balance;
 
-    VendingMachine() {
+    public VendingMachine() {
         this.currentState = new IdleState();
         this.balance = 0;
         this.inventory = new Inventory();
@@ -37,7 +37,7 @@ public class VendingMachine {
         currentState.selectProduct(this, p);
     }
 
-    public void dispense(Product p) {
+    void dispense(Product p) {
         currentState.dispense(this, p);
     }
 
@@ -47,9 +47,7 @@ public class VendingMachine {
 
     public void restock(Product p, int quantity) {
         inventory.addStock(p, quantity);
-        if (currentState instanceof OutOfStockState) {
-            currentState = new IdleState();
-        }
+        currentState.onRestock(this);
         System.out.println("Restocked product " + p.getName() + " with quantity " + quantity);
     }
 

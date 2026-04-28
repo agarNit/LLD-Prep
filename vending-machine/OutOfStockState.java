@@ -19,4 +19,8 @@ public class OutOfStockState implements State {
             System.out.println("No balance to refund.");
         }
     }
+
+    public void onRestock(VendingMachine machine) {
+        machine.setState(new IdleState());
+    }
 }

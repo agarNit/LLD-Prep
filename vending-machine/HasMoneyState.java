@@ -28,6 +28,9 @@ public class HasMoneyState implements State {
 
     public void refund(VendingMachine machine) {
         machine.resetBalance();
+        System.out.println("Money refunded back to user.");
         machine.setState(new IdleState());
-    }   
+    }
+
+    public void onRestock(VendingMachine machine) {}
 }

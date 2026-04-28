@@ -17,4 +17,6 @@ public class IdleState implements State {
     public void refund(VendingMachine machine) {
         System.out.println("No money inserted. Nothing to refund.");
     }
+
+    public void onRestock(VendingMachine machine) {}
 }

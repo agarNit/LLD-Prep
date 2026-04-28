@@ -3,4 +3,5 @@ public interface State {
     void selectProduct(VendingMachine machine, Product p);
     void dispense(VendingMachine machine, Product p);
     void refund(VendingMachine machine);
+    void onRestock(VendingMachine machine);
 }
