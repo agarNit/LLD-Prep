@@ -6,7 +6,6 @@ class Showtime {
     private final String id;
     private final Theatre theatre;
     private final LocalDateTime datetime;
-    private final String screenLabel;
     private final Movie movie;
     private final List<Reservation> reservations;
 
@@ -15,7 +14,6 @@ class Showtime {
         this.theatre = theatre;
         this.movie = movie;
         this.datetime = datetime;
-        this.screenLabel = screenLabel;
         this.reservations = new ArrayList<>();
     }
 

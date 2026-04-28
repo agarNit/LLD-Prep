@@ -7,7 +7,6 @@ import java.util.NoSuchElementException;
 import java.util.UUID;
 
 class BookingSystem {
-    private final List<Theatre> theatres;
     private final Map<String, Movie> moviesById;
     private final Map<String, List<Showtime>> showtimesByMovieId;
     private final Map<String, Showtime> showtimesById;
@@ -18,7 +17,6 @@ class BookingSystem {
             throw new IllegalArgumentException("theatres list cannot be null");
         }
 
-        this.theatres = theatres;
         this.moviesById = new HashMap<>();
         this.showtimesByMovieId = new HashMap<>();
         this.showtimesById = new HashMap<>();
