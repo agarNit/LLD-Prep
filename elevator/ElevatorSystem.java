@@ -94,7 +94,7 @@ class ElevatorController {
         Elevator nearest = elevators.get(0);
         int minDistance = Math.abs(nearest.getCurrentFloor() - floor);
 
-        for (Elevator e: elevators) {
+        for (Elevator e: elevators) { 
             int distance = Math.abs(e.getCurrentFloor() - floor);
             if (distance < minDistance) {
                 minDistance = distance;
