@@ -1,6 +1,6 @@
-# Repository for implementation of the most asked interview LLD problems. Language Used: Java
+# Most asked interview LLD problems. Language Used: Java
 
-## How to appraoch an LLD Problem 
+## How to approach an LLD Problem 
 
 ## Prep must:
 - SOLID principles
