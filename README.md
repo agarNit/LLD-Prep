@@ -56,20 +56,20 @@ In this part, you define the state(model variables) and behaviour (functions) th
 Create the relevant classes along with the state(variables: Represented by '-') and behaviour(functions: Represented by '+') required in that class:
 
 1. class Book:
-   - id
-   - title
-   - author
-   - isbn
-   - List<BookCopy> copies
+   - -id
+   - -title
+   - -author
+   - -isbn
+   - -List<BookCopy> copies
 
-   + searchBookByTitle()
-   + searchBookByAuthor()
-   + addBookCopy(BookCopy copy)
+   + +searchBookByTitle()
+   + +searchBookByAuthor()
+   + +addBookCopy(BookCopy copy)
 
 ---
 
 ## Implementation:
-Now, since we have already done with our requirements and class design. We move on to the implementation part. Do note that its absolutely not necessayr you cannot add any new functonality once you are done with Class Design. Generally, we do keep changing models or adding new methods as we keep implementing requirements. The core idea is to just getting started with the most basic requirements so you do not feel stuck.
+Now, since we have already done with our requirements and class design. We move on to the implementation part. Do note that its absolutely not necessary you cannot add any new functonality once you are done with Class Design. Generally, we do keep changing models or adding new methods as we keep implementing requirements. The core idea is to just getting started with the most basic requirements so you do not feel stuck.
 
 The area where most people get confused here is which class should they design first. Just follow a bottom-up approach, i.e., design those classes first which do not have any dependency on any other class, then classes with least dependency and so on. Use below two criteria to write implementation of any function.
 
@@ -79,11 +79,11 @@ The area where most people get confused here is which class should they design f
 ---
 
 ## Extensibility:
-This part comes in handy and is asked to check whether you have written an extensible code or not, i.e., if any new functionality/feature comes up, does your code require a heavy refactor or can easily be extended with minimal changes. That is what LLD is all about. If you are just out of college or early in your career, this part won't be a pain point and would be less asked in interviews.
+This part comes in handy and is asked to check whether you have written an extensible code or not, i.e., if any new functionality/feature comes up, does your code require a heavy refactor or can easily be extended with minimal changes. That is what LLD is all about. If you are just out of college or early in your career, this part won't be a pain point and would barely be asked in interviews.
 
 Extend your design with additional requirements with minimal changes in the design.
 
-1. Adding different types of Payment methods if till now only cash payment was allowed.
+- Adding different types of Payment methods if till now only cash payment was allowed.
 
 ---
 
